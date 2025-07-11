@@ -1,0 +1,269 @@
+:root {
+
+/* Colors: */
+--unnamed-color-3c3d41: #3C3D41;
+--unnamed-color-f1db1d: #F1DB1D;
+--unnamed-color-2d2dc8: #2D2DC8;
+--unnamed-color-544f4f: #544F4F;
+--unnamed-color-43f6bf: #43F6BF;
+--unnamed-color-3f9824: #3F9824;
+--unnamed-color-2d2d2dcc: #2D2D2DCC;
+--unnamed-color-707070: #707070;
+--unnamed-color-ffffff: #FFFFFF;
+
+/* Font/text values */
+--unnamed-font-family-noto-sans: Noto Sans;
+--unnamed-font-family-raleway: Raleway;
+--unnamed-font-style-normal: normal;
+--unnamed-font-weight-800: 800px;
+--unnamed-font-weight-normal: normal;
+--unnamed-font-size-129: 129px;
+--unnamed-character-spacing-0: 0px;
+--unnamed-line-spacing-103: 103px;
+}
+
+/* === Noto Sans === */
+.noto-sans {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.noto-sans-light {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 100;
+}
+
+.noto-sans-regular {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+}
+
+.noto-sans-bold {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+}
+
+.noto-sans-black {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 900;
+}
+
+.noto-sans-italic {
+  font-family: 'Noto Sans', sans-serif;
+  font-style: italic;
+}
+
+/* === Raleway === */
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.raleway-light {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+
+.raleway-regular {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.raleway-bold {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.raleway-black {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
+.raleway-italic {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+}
+
+
+
+body {
+  background: linear-gradient(to bottom right, #f3f3f3, #ffffff);
+  color: #333;
+}
+
+.news-section {
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+}
+
+.news-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.news-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.news-image {
+  flex: 1 1 300px;
+  background: linear-gradient(135deg, #ccc, #aaa);
+  min-height: 300px;
+}
+
+.news-content {
+  flex: 1 1 400px;
+  padding: 30px;
+  text-align: left;
+}
+
+.news-heading {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.news-text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.news-meta {
+  font-size: 13px;
+  color: #666;
+}
+
+.news-meta span {
+  color: #333;
+  font-weight: 600;
+}
+
+.thumbnail-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.thumb {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #ccc, #aaa);
+  border-radius: 10px;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.read-more {
+  background-color: #555;
+  color: white;
+  padding: 10px 25px;
+  font-size: 14px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.read-more:hover {
+  background-color: #333;
+}
+
+
+/* === MEDIA SOSIAL SECTION === */
+.sosmed-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.sosmed-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.sosmed-tabs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.tab:hover {
+  background-color: #eee;
+}
+
+.tab.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.sosmed-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sosmed-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 15px;
+}
+
+.sosmed-box {
+  background: linear-gradient(135deg, #bbb, #999);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sosmed-main {
+  flex: 1;
+  min-width: 350px;
+  height: 230px;
+  background: linear-gradient(135deg, #bbb, #999);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .sosmed-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sosmed-main {
+    width: 100%;
+  }
+}
+
+
+  .rektor-wrapper {
+    background-image: url('../bg-rektor.png');
+    background-size: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
