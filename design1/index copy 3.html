@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Universitas Winaya Mukti</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+			@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+		</style>
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+    <body class="bg-gray-100 text-gray-800 noto-sans">
+
+
+<!-- 🔁 Video Background -->
+<div class="absolute inset-0 -z-10 overflow-hidden">
+    <video autoplay muted loop playsinline class="w-full h-full object-cover">
+    <source src="./assets/vidio-bg-hero.mp4" type="video/mp4">
+    </video>
+<!-- Overlay hitam transparan 60% -->
+    <div class="absolute inset-0 bg-opacity-60"></div>
+    </div>
+
+<!-- 🔝 Top Strip -->
+<div class="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-100 text-sm py-2 px-4 text-black flex justify-between items-center z-50 relative">
+  <!-- Kiri: Logo dan Nama -->
+  <div class="flex items-center space-x-2">
+    <img src="./assets/logo (4).png" alt="Logo font UNWIM" class="h-8 w-auto" />
+    <img src="./assets/logo (1).png" alt="Logo SPIRIT" class="h-6 w-auto" />
+    <img src="./assets/logo (3).png" alt="Logo diktiberdampak" class="h-6 w-auto" />
+  </div>
+
+  <!-- Kanan: Link Navigasi -->
+  <div class="space-x-4">
+    <a href="#" class="hover:text-gray-600 font-medium">Kontak</a>
+    <a href="#" class="hover:text-gray-600 font-medium">Login</a>
+  </div>
+</div>
+
+  <!-- 📌 Navbar -->
+  <nav class="fixed top-[40px] z-50 w-full bg-white/50 backdrop-blur-lg text-black">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center relative">
+      
+      <!-- Kiri Menu -->
+      <ul class="flex gap-4 text-sm md:text-base items-center">
+        <li class="group relative">
+          <a href="#" class="hover:text-gray-700 transition">Beranda</a>
+          <ul class="absolute hidden group-hover:block top-full left-0 bg-white text-black shadow-lg rounded min-w-[160px]">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Profil Kampus</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Visi Misi</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Struktur Organisasi</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="hover:text-gray-700 transition">Tentang</a></li>
+        <li><a href="#" class="hover:text-gray-700 transition">Pendaftaran</a></li>
+      </ul>
+
+      <!-- 🔰 Logo Tengah -->
+      <div class="absolute left-1/2 transform -translate-x-1/2">
+        <a href="#">
+          <img src="assets/logo-unwim.png" alt="Logo UNWIM" class="w-[80px] md:w-[100px]">
+        </a>
+      </div>
+
+      <!-- Kanan Menu -->
+      <ul class="flex gap-4 text-sm md:text-base items-center">
+        <li class="group relative">
+          <a href="#" class="hover:text-gray-700 transition">Berita</a>
+          <ul class="absolute hidden group-hover:block top-full left-0 bg-white text-black shadow-lg rounded min-w-[160px]">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Kegiatan</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Media Sosial</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="hover:text-gray-700 transition">Pengumuman</a></li>
+        <li><a href="#" class="hover:text-gray-700 transition">Kerjasama</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 z-10 relative">
+  </section>
+
+        <!-- Sambutan Rektor -->
+        <section class="py-12 mx-auto px-4" style="background-image: url('assets/main-background.png'); background-repeat:no-repeat;">
+            <div class="container mx-auto px-4 text-center mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold mb-8">SAMBUTAN REKTOR</h2>
+                <div class="grid md:grid-cols-12 gap-6">
+                    <div class="col-span-12 md:col-span-7 lg:col-span-7 md:pe-5">
+                        <p class="mx-auto text-gray-700 leading-relaxed text-justify text-[20px]">
+                            Assalamu’alaikum warahmatullahi wabarakatuh,<br />
+                            Salam sejahtera bagi kita semua.<br />
+                            Dengan penuh rasa syukur dan bangga, saya menyambut Anda di
+                            website resmi
+                            Universitas Winaya Mukti.
+                            Sebagai institusi pendidikan tinggi yang terus berkembang,
+                            UNWIM
+                            berkomitmen untuk mencetak generasi unggul yang berdaya
+                            saing global,
+                            berkarakter kuat, dan berkontribusi nyata bagi bangsa dan
+                            negara.
+                            <br /><br />
+                            Universitas Winaya Mukti memiliki visi menjadi perguruan
+                            tinggi yang unggul
+                            dalam bidang pendidikan, penelitian, dan pengabdian kepada
+                            masyarakat
+                            berbasis nilai-nilai kebangsaan dan keilmuan.
+                        </p>
+                        <p class="text-left mt-5 italic fw-bold">Dr. Deden Komar Priatana, ST., SIP.,MM., CHRA</p>
+                    </div>
+                    <div class="col-span-12 md:col-span-5 lg:col-span-4 ps-5">
+                        <div class="rektor-wrapper relative mt-[-30px] overflow-hidden group">
+                        <img src="assets/rektor.png" class="w-full" alt="Foto Rektor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fakultas -->
+        <section class="p-0 bg-gray-100">
+            <div class="container-full mx-auto px-0">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-0">
+                    <div
+                        class="relative bg-white shadow-md overflow-hidden group">
+                        <img src="assets/background-fakultas (4).png"
+                            class="w-full h-100 object-cover group-hover:scale-[135%] transition-transform"
+                            alt="FAPERTA" />
+                        <div
+                            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-3 font-semibold">FAPERTA</div>
+                    </div>
+                    <div
+                        class="relative bg-white shadow-md overflow-hidden group">
+                        <img src="assets/background-fakultas (1).png"
+                            class="w-full h-100 object-cover group-hover:scale-[135%] transition-transform"
+                            alt="FAHUTAN" />
+                        <div
+                            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-3 font-semibold">FAHUTAN</div>
+                    </div>
+                    <div
+                        class="relative bg-white shadow-md overflow-hidden group">
+                        <img src="assets/background-fakultas (2).png"
+                            class="w-full h-100 object-cover group-hover:scale-[135%] transition-transform"
+                            alt="FTPA" />
+                        <div
+                            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-3 font-semibold">FTPA</div>
+                    </div>
+                    <div
+                        class="relative bg-white shadow-md overflow-hidden group">
+                        <img src="assets/background-fakultas (3).png"
+                            class="w-full h-100 object-cover group-hover:scale-[135%] transition-transform"
+                            alt="FEB" />
+                        <div
+                            class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-3 font-semibold">FEB</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Mengapa UNWIM Adalah Pilihan Tepat -->
+        <section class="bg-white py-16 px-4 text-center">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-2xl md:text-3xl font-reguler mb-8">MENGAPA <span class="raleway-black">UNWIM</span> ADALAH<br /> PILIHAN TEPAT?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left text-gray-700">
+                <div class="bg-gray-100 rounded-xl p-6 shadow">
+                    <h3 class="font-semibold text-lg mb-2">Kampus Hijau & Nyaman</h3>
+                    <p>Lingkungan belajar yang asri, kondusif, dan terintegrasi dengan teknologi pendidikan masa kini.</p>
+                </div>
+                <div class="bg-gray-100 rounded-xl p-6 shadow">
+                    <h3 class="font-semibold text-lg mb-2">Sistem Penjamin Mutu</h3>
+                    <p>Sejak 2014, UNWIM menerapkan SPMI berbasis siklus PPEPP untuk menjaga dan meningkatkan kualitas layanan pendidikan.</p>
+                </div>
+                <div class="bg-gray-100 rounded-xl p-6 shadow">
+                    <h3 class="font-semibold text-lg mb-2">Prodi Terakreditasi</h3>
+                    <p>Seluruh prodi di UNWIM telah terakreditasi oleh BAN-PT, menunjukkan kualitas akademik yang terpercaya dan diakui nasional.</p>
+                </div>
+                <div class="bg-gray-100 rounded-xl p-6 shadow">
+                    <h3 class="font-semibold text-lg mb-2">Publikasi Ilmiah Aktif</h3>
+                    <p>Dosen dan mahasiswa aktif meneliti dan mempublikasikan karya ilmiah di jurnal bereputasi nasional dan internasional.</p>
+                </div>
+                <div class="md:col-span-2 bg-gray-100 rounded-xl p-6 shadow text-center">
+                    <h3 class="font-semibold text-lg mb-2">Kolaborasi Dunia Nyata</h3>
+                    <p>UNWIM menjalin kerja sama dengan UMKM, pemerintah, dan dunia industri untuk mendukung keterampilan praktis dan kewirausahaan.</p>
+                </div>
+                </div>
+                <p class="mt-6 font-medium italic text-gray-800">
+                “<span class="font-bold text-Black-700">UNWIM</span> hadir bukan hanya untuk mendidik, tapi membentuk <span class="font-bold">karakter dan membangun masa depan.</span>”
+                </p>
+            </div>
+            </section>
+
+
+        <!-- Section: Fasilitas Kampus -->
+        <section class="bg-gray-800 py-12 text-white text-center">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-2xl md:text-3xl font-bold mb-8">FASILITAS
+                    KAMPUS</h2>
+
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <!-- Tempatkan gambar sesuai kebutuhan Anda -->
+                    <div
+                        class="bg-white rounded-xl h-32 md:h-40 shadow-md"></div>
+                    <div
+                        class="bg-white rounded-xl h-32 md:h-40 shadow-md"></div>
+                    <div
+                        class="bg-white rounded-xl h-32 md:h-40 shadow-md"></div>
+                    <div
+                        class="bg-white rounded-xl h-32 md:h-40 shadow-md"></div>
+                    <div
+                        class="bg-white rounded-xl h-32 md:h-40 shadow-md"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Ajakan Daftar -->
+        <section class="bg-white py-[130px] position-relative" style="background-image: url('./assets/bg pendaftarn.png')">
+            <img
+                src="./assets/model pendaftaran.png" 
+                alt="Kenali Lebih Dekat"
+                class="position-absolute left-0 bottom-0 h-80">
+            <div
+                class="mx-auto px-4 flex flex-col md:flex-col items-center">
+                <div class="text-center md:text-center">
+                    <h2
+                        class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Kenali
+                        Lebih
+                        Dekat, Pilih yang Terbaik!</h2>
+                    <p class="text-gray-700 mb-6">Klik Daftar untuk mulai
+                        perjalananmu. Klik
+                        Informasi untuk tahu lebih banyak.</p>
+                    <div class="space-x-4">
+                        <a href="#"
+                            class="bg-gray-900 text-white px-6 py-2 rounded-full hover:bg-gray-700">Daftar</a>
+                        <a href="#"
+                            class="border border-gray-900 text-gray-900 px-6 py-2 rounded-full hover:bg-gray-900 hover:text-white">Informasi</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION TESTIMONI ALUMNI -->
+<section class="py-20 bg-gradient-to-b from-gray-500 to-gray-700">
+  <h2 class="text-center text-3xl font-bold text-white mb-12 uppercase">Testimoni Alumni</h2>
+
+  <!-- Kontainer Scroll Horizontal -->
+  <div class="swiper testimonialslider">
+    <div class="space-x-6 w-max pb-4 swiper-wrapper">
+      
+      <!-- Testimoni 1 -->
+      <div class="relative min-w-[280px] max-w-xs swiper-slide">
+        <div class="relative z-10 mx-auto w-24 h-24 rounded-full border-4 border-cyan-500 overflow-hidden">
+          <img src="https://i.pravatar.cc/100?img=11" alt="Foto" class="w-full h-full object-cover" />
+        </div>
+        <div class="mt-[-40px] bg-white rounded-xl pt-16 pb-6 px-4 shadow-lg text-center min-h-[280px]">
+          <p class="italic text-gray-600 text-sm leading-relaxed mb-4">“Saya bangga menjadi bagian dari Universitas Winaya Mukti. Lingkungan yang suportif dan fasilitas yang memadai membuat saya berkembang pesat.”</p>
+          <h3 class="font-semibold text-base text-gray-800">Nisa Maulida</h3>
+          <p class="text-sm text-gray-500">Analis Data - BUMN</p>
+        </div>
+      </div>
+
+      <!-- Testimoni 2 -->
+      <div class="relative min-w-[280px] max-w-xs swiper-slide">
+        <div class="relative z-10 mx-auto w-24 h-24 rounded-full border-4 border-blue-600 overflow-hidden">
+          <img src="https://i.pravatar.cc/100?img=12" alt="Foto" class="w-full h-full object-cover" />
+        </div>
+        <div class="mt-[-40px] bg-white rounded-xl pt-16 pb-6 px-4 shadow-lg text-center min-h-[280px]">
+          <p class="italic text-gray-600 text-sm leading-relaxed mb-4">“Dengan dukungan kampus, saya bisa membangun startup sendiri setelah lulus.”</p>
+          <h3 class="font-semibold text-base text-gray-800">Raka Permana</h3>
+          <p class="text-sm text-gray-500">Founder - TechStart ID</p>
+        </div>
+      </div>
+
+      <!-- Testimoni 3 -->
+      <div class="relative min-w-[280px] max-w-xs swiper-slide">
+        <div class="relative z-10 mx-auto w-24 h-24 rounded-full border-4 border-green-500 overflow-hidden">
+          <img src="https://i.pravatar.cc/100?img=13" alt="Foto" class="w-full h-full object-cover" />
+        </div>
+        <div class="mt-[-40px] bg-white rounded-xl pt-16 pb-6 px-4 shadow-lg text-center min-h-[280px]">
+          <p class="italic text-gray-600 text-sm leading-relaxed mb-4">“Kuliah di UNWIM membekali saya dengan ilmu dan pengalaman yang luar biasa. Dosen-dosen sangat kompeten dan mendukung perkembangan karier saya!”</p>
+          <h3 class="font-semibold text-base text-gray-800">Ahmad Fadilah</h3>
+          <p class="text-sm text-gray-500">Manager Keuangan - PT Maju Jaya</p>
+        </div>
+      </div>
+
+            <!-- Testimoni 4 -->
+      <div class="relative min-w-[280px] max-w-xs swiper-slide">
+        <div class="relative z-10 mx-auto w-24 h-24 rounded-full border-4 border-cyan-500 overflow-hidden">
+          <img src="https://i.pravatar.cc/100?img=11" alt="Foto" class="w-full h-full object-cover" />
+        </div>
+        <div class="mt-[-40px] bg-white rounded-xl pt-16 pb-6 px-4 shadow-lg text-center min-h-[280px]">
+          <p class="italic text-gray-600 text-sm leading-relaxed mb-4">“Saya bangga menjadi bagian dari Universitas Winaya Mukti. Lingkungan yang suportif dan fasilitas yang memadai membuat saya berkembang pesat.”</p>
+          <h3 class="font-semibold text-base text-gray-800">Nisa Maulida</h3>
+          <p class="text-sm text-gray-500">Analis Data - BUMN</p>
+        </div>
+      </div>
+      
+                  <!-- Testimoni 5 -->
+      <div class="relative min-w-[280px] max-w-xs swiper-slide">
+        <div class="relative z-10 mx-auto w-24 h-24 rounded-full border-4 border-cyan-500 overflow-hidden">
+          <img src="https://i.pravatar.cc/100?img=11" alt="Foto" class="w-full h-full object-cover" />
+        </div>
+        <div class="mt-[-40px] bg-white rounded-xl pt-16 pb-6 px-4 shadow-lg text-center min-h-[280px]">
+          <p class="italic text-gray-600 text-sm leading-relaxed mb-4">“Saya bangga menjadi bagian dari Universitas Winaya Mukti. Lingkungan yang suportif dan fasilitas yang memadai membuat saya berkembang pesat.”</p>
+          <h3 class="font-semibold text-base text-gray-800">Nisa Maulida</h3>
+          <p class="text-sm text-gray-500">Analis Data - BUMN</p>
+        </div>
+      </div>
+
+                  <!-- Testimoni 6 -->
+      <div class="relative min-w-[280px] max-w-xs swiper-slide">
+        <div class="relative z-10 mx-auto w-24 h-24 rounded-full border-4 border-cyan-500 overflow-hidden">
+          <img src="https://i.pravatar.cc/100?img=11" alt="Foto" class="w-full h-full object-cover" />
+        </div>
+        <div class="mt-[-40px] bg-white rounded-xl pt-16 pb-6 px-4 shadow-lg text-center min-h-[280px]">
+          <p class="italic text-gray-600 text-sm leading-relaxed mb-4">“Saya bangga menjadi bagian dari Universitas Winaya Mukti. Lingkungan yang suportif dan fasilitas yang memadai membuat saya berkembang pesat.”</p>
+          <h3 class="font-semibold text-base text-gray-800">Nisa Maulida</h3>
+          <p class="text-sm text-gray-500">Analis Data - BUMN</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+        
+        <!-- Section: Kegiatan Universitas -->
+        <section class="py-12 text-white text-center">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2
+                    class="text-2xl md:text-3xl font-bold mb-8 text-gray-900">KEGIATAN UNIVERSITAS</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4"> 
+                    <!-- Tempatkan gambar sesuai kebutuhan Anda -->
+                    <div
+                        class="shadow-md sosmed-box">
+                        <div
+                        class="relative bg-white shadow-md rounded-lg overflow-hidden group">
+                        <img src="assets/background-fakultas (4).png"
+                            class="w-full h-100 object-cover group-hover:scale-[135%] transition-transform"
+                            alt="FAPERTA" />
+                        <div
+                            class="hidden group-hover:block absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-3 font-semibold">FAPERTA</div>
+                        </div>
+                    </div>
+                    <div
+                        class="shadow-md sosmed-box">
+                        <div
+                        class="relative bg-white shadow-md rounded-lg overflow-hidden group">
+                        <img src="assets/background-fakultas (4).png"
+                            class="w-full h-100 object-cover group-hover:scale-[135%] transition-transform"
+                            alt="FAPERTA" />
+                        <div
+                            class="hidden group-hover:block absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-3 font-semibold">FAPERTA</div>
+                    </div>
+                    </div>
+                    <div
+                        class="shadow-md sosmed-box">
+                        <div
+                        class="relative bg-white shadow-md rounded-lg overflow-hidden group">
+                        <img src="assets/background-fakultas (4).png"
+                            class="w-full h-100 object-cover group-hover:scale-[135%] transition-transform"
+                            alt="FAPERTA" />
+                        <div
+                            class="hidden group-hover:block absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-3 font-semibold">FAPERTA</div>
+                    </div>
+                    </div>
+                    <div
+                        class="shadow-md sosmed-box">
+                        <div
+                        class="relative bg-white shadow-md rounded-lg overflow-hidden group">
+                        <img src="assets/background-fakultas (4).png"
+                            class="w-full h-100 object-cover group-hover:scale-[135%] transition-transform"
+                            alt="FAPERTA" />
+                        <div
+                            class="hidden group-hover:block absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-3 font-semibold">FAPERTA</div>
+                    </div>
+                    </div>
+                    <div
+                        class="shadow-md sosmed-box">
+                        <div
+                        class="relative bg-white shadow-md rounded-lg overflow-hidden group">
+                        <img src="assets/background-fakultas (4).png"
+                            class="w-full h-100 object-cover group-hover:scale-[135%] transition-transform"
+                            alt="FAPERTA" />
+                        <div
+                            class="hidden group-hover:block absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-3 font-semibold">FAPERTA</div>
+                    </div>
+                    </div>
+                    <div
+                        class="shadow-md sosmed-box">
+                        <div
+                        class="relative bg-white shadow-md rounded-lg overflow-hidden group">
+                        <img src="assets/background-fakultas (4).png"
+                            class="w-full h-100 object-cover group-hover:scale-[135%] transition-transform"
+                            alt="FAPERTA" />
+                        <div
+                            class="hidden group-hover:block absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-3 font-semibold">FAPERTA</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 py-5">
+                    <div class="w-full mx-auto">
+                        <a href="#" class="read-more">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Section: Berita Universitas -->
+        <section class="news-section">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-900">BERITA UNIVERSITAS</h2>
+
+            <div class="news-card">
+            <div class="news-image"></div>
+            <div class="news-content">
+                <h3 class="news-heading">
+                UNWIM Gelar Wisuda ke-45, Luluskan 523 Mahasiswa dari Berbagai Fakultas
+                </h3>
+                <p class="news-text">
+                Universitas Winaya Mukti (UNWIM) kembali menggelar prosesi wisuda ke-45 secara luring di Gedung Serbaguna UNWIM, Jatinangor. Sebanyak 523 mahasiswa dari empat fakultas resmi dikukuhkan sebagai lulusan oleh Rektor UNWIM, Dr. H. Deden Komar Priatna, ST., SIP., MM., CHRA. Acara ini menjadi momen bersejarah sekaligus emosional bagi para wisudawan dan keluarga yang turut hadir memberikan dukungan. Dalam sambutannya, Rektor mengajak seluruh lulusan untuk terus berkontribusi membangun bangsa dengan semangat inovasi dan integritas.
+                </p>
+                <p class="news-meta">
+                Bandung, 2 Juli 2025 <br/>
+                <span>Posted By : Taofik Basuki</span>
+                </p>
+            </div>
+            </div>
+
+            <div class="thumbnail-row">
+            <div class="thumb"></div>
+            <div class="thumb"></div>
+            <div class="thumb"></div>
+            <div class="thumb"></div>
+            <div class="thumb"></div>
+            </div>
+
+            <div class="button-wrapper">
+            <a href="#" class="read-more">Selengkapnya</a>
+            </div>
+        </section>
+
+         <section class="sosmed-section">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-900">MEDIA SOSIAL UNIVERSITAS</h2>
+
+            <div class="sosmed-tabs">
+            <span class="tab active" data-platform="instagram">Instagram</span>
+            <span class="tab" data-platform="tiktok">Tiktok</span>
+            <span class="tab" data-platform="youtube">Youtube</span>
+            </div>
+
+            <div class="sosmed-container">
+            <div class="sosmed-grid" id="sosmed-grid">
+                <!-- Akan diisi oleh JS -->
+            </div>
+            <div class="sosmed-main" id="sosmed-main"></div>
+            </div>
+        </section>
+        
+        <!-- Kerjasama Pendidikan -->
+        <section class="section-kerjasama py-12">
+            <div class="w-full mx-auto px-4 text-center">
+                <h2
+                    class="text-2xl md:text-3xl font-bold mb-8 uppercase text-white">Kerjasama
+                    Pendidikan</h2>
+                <!-- Section: Kerjasama Pendidikan -->
+                <div class="grid grid-cols-1 md:grid-cols-1">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div
+                                class="bg-white rounded-lg shadow-md p-4 swiper-slide">
+                                <div class="bg-gray-100 mb-2 rounded">
+                                    <img
+                                        src="assets/background-fakultas (3).png">
+                                </div>
+                                <p class="text-sm font-semibold">Nama
+                                    univ</p>
+                                <p
+                                    class="text-xs italic text-gray-500">(Negara)</p>
+                            </div>
+                            <div
+                                class="bg-white rounded-lg shadow-md p-4 swiper-slide">
+                                <div class="bg-gray-100 mb-2 rounded">
+                                    <img
+                                        src="assets/background-fakultas (3).png">
+                                </div>
+                                <p class="text-sm font-semibold">Nama
+                                    univ</p>
+                                <p
+                                    class="text-xs italic text-gray-500">(Negara)</p>
+                            </div>
+                            <div
+                                class="bg-white rounded-lg shadow-md p-4 swiper-slide">
+                                <div class="bg-gray-100 mb-2 rounded">
+                                    <img
+                                        src="assets/background-fakultas (3).png">
+                                </div>
+                                <p class="text-sm font-semibold">Nama
+                                    univ</p>
+                                <p
+                                    class="text-xs italic text-gray-500">(Negara)</p>
+                            </div>
+                            <div
+                                class="bg-white rounded-lg shadow-md p-4 swiper-slide">
+                                <div class="bg-gray-100 mb-2 rounded">
+                                    <img
+                                        src="assets/background-fakultas (3).png">
+                                </div>
+                                <p class="text-sm font-semibold">Nama
+                                    univ</p>
+                                <p
+                                    class="text-xs italic text-gray-500">(Negara)</p>
+                            </div>
+                            <div
+                                class="bg-white rounded-lg shadow-md p-4 swiper-slide">
+                                <div class="bg-gray-100 mb-2 rounded">
+                                    <img
+                                        src="assets/background-fakultas (3).png">
+                                </div>
+                                <p class="text-sm font-semibold">Nama
+                                    univ</p>
+                                <p
+                                    class="text-xs italic text-gray-500">(Negara)</p>
+                            </div>
+                            <div
+                                class="bg-white rounded-lg shadow-md p-4 swiper-slide">
+                                <div class="bg-gray-100 mb-2 rounded">
+                                    <img
+                                        src="assets/background-fakultas (3).png">
+                                </div>
+                                <p class="text-sm font-semibold">Nama
+                                    univ</p>
+                                <p
+                                    class="text-xs italic text-gray-500">(Negara)</p>
+                            </div>
+                            <div
+                                class="bg-white rounded-lg shadow-md p-4 swiper-slide">
+                                <div class="bg-gray-100 mb-2 rounded">
+                                    <img
+                                        src="assets/background-fakultas (3).png">
+                                </div>
+                                <p class="text-sm font-semibold">Nama
+                                    univ</p>
+                                <p
+                                    class="text-xs italic text-gray-500">(Negara)</p>
+                            </div>
+                            <!-- Optional navigation -->
+                            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div> -->
+                        </div>
+
+                    </div>
+                </div>
+
+                <style>
+                .section-kerjasama{
+                    background: linear-gradient(-1.04deg, rgba(62, 62, 62, 1.00) 0%, rgba(110, 107, 107, 1.00) 100%);
+                    border-style: solid;
+                    border-color: transparent;
+                    border-width: 1px;
+                    height: 472px;
+                    position: relative;
+                }
+                .swiper {
+                    width: 100%;
+                    height: 300px;
+                    margin: auto;
+                }
+                .swiper-slide img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    background: var(--rgb255-255-255, #ffffff);
+                    border-radius: 42px;
+                }
+            </style>
+
+            </section>
+            <!-- Footer -->
+            <footer class="bg-gray-200x text-gray-800 pt-12"
+                style="background-image: url('assets/main-background.png');">
+                <div
+                    class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-6 text-sm pb-8">
+                    <!-- Logo -->
+                    <div>
+                        <img src="assets/logo (4).png" alt="UNWIM Logo"
+                            class="mb-4">
+                        <p
+                            class="raleway-bold text-sm leading-snug">Universitas
+                            Winaya Mukti</p>
+                        <p
+                            class="text-xs italic">"Semangat kebersamaan, Profesional, Inovatif, Religius, Inspiratif dan Tanggung Jawab"</p>
+                        <div class="flex">
+                            <div class="flex gap-2 mt-3">
+                                <a href="#"><img
+                                        src="assets/icon (6).png"
+                                        class="w-[50px]" /></a>
+                            </div>
+                            <div class="flex gap-2 mt-3">
+                                <a href="#"><img
+                                        src="assets/icon (1).png"
+                                        class="w-[50px]" /></a>
+                            </div>
+
+                            <div class="flex gap-2 mt-3">
+                                <a href="#"><img
+                                        src="assets/icon (2).png"
+                                        class="w-[50px]" /></a>
+                            </div>
+
+                            <div class="flex gap-2 mt-3">
+                                <a href="#"><img
+                                        src="assets/icon (3).png"
+                                        class="w-[50px]" /></a>
+                            </div>
+
+                            <div class="flex gap-2 mt-3">
+                                <a href="#"><img
+                                        src="assets/icon (4).png"
+                                        class="w-[50px]" /></a>
+                            </div>
+
+                            <div class="flex gap-2 mt-3">
+                                <a href="#"><img
+                                        src="assets/icon (5).png"
+                                        class="w-[50px]" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Link -->
+                    <div>
+                        <h4 class="font-bold mb-2">Quick Link</h4>
+                        <ul class="space-y-1">
+                            <li><a href="#"
+                                    class="hover:font-bold">Beranda</a></li>
+                            <li><a href="#"
+                                    class="hover:font-bold">Pendaftaran</a></li>
+                            <li><a href="#"
+                                    class="hover:font-bold">Berita</a></li>
+                            <li><a href="#"
+                                    class="hover:font-bold">Kegiatan</a></li>
+                            <li><a href="#" class="hover:font-bold">SIM Akademik</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Lembaga -->
+                    <div>
+                        <h4 class="font-bold mb-2">Lembaga Universitas</h4>
+                        <ul class="space-y-1">
+                            <li><a href="#"
+                                    class="hover:font-bold">LPPM</a></li>
+                            <li><a href="#"
+                                    class="hover:font-bold">Kemahasiswaan</a></li>
+                            <li><a href="#"
+                                    class="hover:font-bold">Akademik</a></li>
+                            <li><a href="#"
+                                    class="hover:font-bold">Kepegawaian</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Fakultas -->
+                    <div>
+                        <h4 class="font-bold mb-2">Fakultas</h4>
+                        <ul class="space-y-1">
+                            <li><a href="#"
+                                    class="hover:font-bold">Fakultas Pertanian</a></li>
+                            <li><a href="#"
+                                    class="hover:font-bold">Fakultas Kehutanan</a></li>
+                            <li><a href="#"
+                                    class="hover:font-bold">Fakultas Teknik, Perencanaan, dan Arsitektur</a></li>
+                            <li><a href="#"
+                                    class="hover:font-bold">Fakultas Ekonomi dan Bisnis</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Kampus Info -->
+                <div class="bg-gray-700 text-gray-200 text-xs px-4 py-6"
+                    style="background: #707070 0% 0% no-repeat padding-box;">
+                    <div
+                        class="max-w-6xl w-75 mx-auto grid md:grid-cols-3 gap-6">
+                        <div>
+                            <p class="font-semibold">Kampus I</p>
+                            <p>Telp: (022) 87910783</p>
+                            <p>Fax: (022) 87910713</p>
+                            <p>Alamat: Jl. Bandung-Sumedang Km. 29</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Kampus II</p>
+                            <p>Telp: (022) 87910783</p>
+                            <p>Fax: (022) 87910713</p>
+                            <p>Alamat: Jl. Pahlawan No. 08, Bandung</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Kampus III</p>
+                            <p>Telp: (022) 9302184</p>
+                            <p>Fax: (022) 9302184</p>
+                            <p>Alamat: Jl. Tunasarga Raya no. 25, Bandung</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Copyright -->
+                <div class="bg-gray-900x text-dark text-center py-2 text-xs">
+                    ©2025 Universitas Winayamukti – Privacy and Copyright
+                </div>
+
+                <!-- Bottom Copyright -->
+                <div
+                    class="bg-gray-900x text-white text-center py-4 text-xs h-[50px]"
+                    style="font: normal normal medium 18px/24px Noto Sans; background-image: url('assets/section-background (1).png'); background-size: 100%;"></div>
+            </footer>
+            <!-- WhatsApp Floating Button -->
+            <a href="https://wa.me/6281234567890"
+                class="whatsapp-float"
+                target="_blank"
+                title="Chat via WhatsApp">
+                <img src="https://img.icons8.com/color/48/000000/whatsapp.png"
+                    alt="WhatsApp">
+            </a>
+
+            <!-- CSS untuk styling tombol -->
+            <style>
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+}
+</style>
+            <!-- Script -->
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/script/script.js"></script>
+
+        <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- js For testimoni alumni -->
+<script>
+            const swipertesimonialumni = new Swiper(".testimonialslider", {
+                slidesPerView: 6,
+                spaceBetween: 10,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true, // Pause saat disorot
+                },
+                breakpoints: {
+                    640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    },
+                    768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                    },
+                    1024: {
+                    slidesPerView: 6,
+                    spaceBetween: 50,
+                    },
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: false /* {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                } */ ,
+                // support swipe otomatis
+                grabCursor: true,
+            });
+        </script>
+
+        <!-- js For Kerjasama -->
+<script>
+            const swiper = new Swiper(".mySwiper", {
+                slidesPerView: 6,
+                spaceBetween: 10,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true, // Pause saat disorot
+                },
+                breakpoints: {
+                    640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    },
+                    768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                    },
+                    1024: {
+                    slidesPerView: 6,
+                    spaceBetween: 50,
+                    },
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: false /* {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                } */ ,
+                // support swipe otomatis
+                grabCursor: true,
+            });
+        </script>
+
+        </body>
+    </html>
