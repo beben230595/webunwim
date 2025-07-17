@@ -1,4 +1,23 @@
 
+
+window.addEventListener('scroll', () => {
+    const body = document.body;
+
+    if (window.scrollY > 50) {
+      body.classList.add('body-scrolled');
+    } else {
+      body.classList.remove('body-scrolled')
+    }
+  });
+
+
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
+
 const data = {
   instagram: [
     "#ff9a9e", "#fad0c4", "#fbc2eb", "#a18cd1", "#fbc2eb", "#ffecd2"
