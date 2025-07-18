@@ -495,38 +495,65 @@
 
         
         <!-- Section: Berita Universitas -->
-        <section class="news-section">
-            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-900">BERITA UNIVERSITAS</h2>
+        <section class="news-section px-4 py-20 max-w-6xl mx-auto">
+  <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-900 text-center">BERITA UNIVERSITAS</h2>
 
-            <div class="news-card">
-            <div class="news-image"></div>
-            <div class="news-content">
-                <h3 class="news-heading">
-                UNWIM Gelar Wisuda ke-45, Luluskan 523 Mahasiswa dari Berbagai Fakultas
-                </h3>
-                <p class="news-text">
-                Universitas Winaya Mukti (UNWIM) kembali menggelar prosesi wisuda ke-45 secara luring di Gedung Serbaguna UNWIM, Jatinangor. Sebanyak 523 mahasiswa dari empat fakultas resmi dikukuhkan sebagai lulusan oleh Rektor UNWIM, Dr. H. Deden Komar Priatna, ST., SIP., MM., CHRA. Acara ini menjadi momen bersejarah sekaligus emosional bagi para wisudawan dan keluarga yang turut hadir memberikan dukungan. Dalam sambutannya, Rektor mengajak seluruh lulusan untuk terus berkontribusi membangun bangsa dengan semangat inovasi dan integritas.
-                </p>
-                <p class="news-meta">
-                Bandung, 2 Juli 2025 <br/>
-                <span>Posted By : Taofik Basuki</span>
-                </p>
-            </div>
-            </div>
+  <!-- Konten Utama -->
+  <div class="news-card flex flex-col md:flex-row gap-6 bg-white shadow-lg rounded-lg p-6 transition-all duration-300">
+    <div class="news-image w-full md:w-1/2">
+      <img id="mainImage" src="./assets/background-fakultas (1).png" alt="Berita UNWIM" class="rounded-lg w-full h-64 object-cover" />
+    </div>
+    <div class="news-content w-full md:w-1/2">
+      <h3 id="mainTitle" class="text-xl font-semibold mb-4">
+        UNWIM Gelar Wisuda ke-45, Luluskan 523 Mahasiswa dari Berbagai Fakultas
+      </h3>
+      <p id="mainText" class="text-gray-700 mb-4">
+        Universitas Winaya Mukti (UNWIM) kembali menggelar prosesi wisuda ke-45 secara luring di Gedung Serbaguna UNWIM, Jatinangor. Sebanyak 523 mahasiswa dari empat fakultas resmi dikukuhkan sebagai lulusan oleh Rektor UNWIM, Dr. H. Deden Komar Priatna, ST., SIP., MM., CHRA.
+      </p>
+      <p id="mainMeta" class="text-sm text-gray-500">
+        Bandung, 2 Juli 2025 <br />
+        <span>Posted By : Taofik Basuki</span>
+      </p>
+    </div>
+  </div>
 
-            <div class="thumbnail-row">
-            <div class="thumb"></div>
-            <div class="thumb"></div>
-            <div class="thumb"></div>
-            <div class="thumb"></div>
-            <div class="thumb"></div>
-            </div>
+  <!-- Thumbnail -->
+  <div class="thumbnail-row flex  flex-warp gap-3 mt-6 mx-auto max-w-4x1 justify-center">
+    <img src="./assets/background-fakultas (1).png"
+            alt=""
+        class="thumb w-20 h-20 object-cover cursor-pointer rounded border-2" 
+      data-title="UNWIM Gelar Wisuda ke-45, Luluskan 523 Mahasiswa dari Berbagai Fakultas"
+      data-text="Universitas Winaya Mukti (UNWIM) kembali menggelar prosesi wisuda ke-45 secara luring di Gedung Serbaguna UNWIM, Jatinangor. Sebanyak 523 mahasiswa dari empat fakultas resmi dikukuhkan sebagai lulusan oleh Rektor UNWIM."
+      data-meta="Bandung, 2 Juli 2025<br/>Posted By : Taofik Basuki" />
 
-            <div class="button-wrapper">
-            <a href="#" class="read-more">Selengkapnya</a>
-            </div>
-        </section>
+    <img src="./assets/background-fakultas (2).png" alt="" class="thumb w-20 h-20 object-cover cursor-pointer rounded border-2"
+      data-title="UNWIM Teken MoU Kerja Sama dengan Aston Pasteur Hotel"
+      data-text="Dalam rangka memperluas jaringan kerja sama dunia industri, UNWIM menandatangani nota kesepahaman dengan Aston Pasteur Hotel, Bandung. Acara ini dihadiri langsung oleh pimpinan kedua institusi."
+      data-meta="Bandung, 10 Juli 2025<br/>Posted By : Admin UNWIM" />
 
+    <img src="./assets/background-fakultas (3).png" alt="" class="thumb w-20 h-20 object-cover cursor-pointer rounded border-2"
+      data-title="UNWIM Launching Program Inovasi Digital Kampus"
+      data-text="UNWIM resmi meluncurkan program digitalisasi kampus yang mencakup sistem e-learning, e-sertifikat, dan digital library. Langkah ini diharapkan mendukung transformasi pendidikan tinggi."
+      data-meta="Sumedang, 8 Juli 2025<br/>Posted By : Media UNWIM" />
+
+    <img src="./assets/background-fakultas (2).png" alt="" class="thumb w-20 h-20 object-cover cursor-pointer rounded border-2"
+      data-title="UNWIM Teken MoU Kerja Sama dengan Aston Pasteur Hotel"
+      data-text="Dalam rangka memperluas jaringan kerja sama dunia industri, UNWIM menandatangani nota kesepahaman dengan Aston Pasteur Hotel, Bandung. Acara ini dihadiri langsung oleh pimpinan kedua institusi."
+      data-meta="Bandung, 10 Juli 2025<br/>Posted By : Admin UNWIM" />
+
+      <img src="./assets/background-fakultas (3).png" alt="" class="thumb w-20 h-20 object-cover cursor-pointer rounded border-2"
+      data-title="UNWIM Launching Program Inovasi Digital Kampus"
+      data-text="UNWIM resmi meluncurkan program digitalisasi kampus yang mencakup sistem e-learning, e-sertifikat, dan digital library. Langkah ini diharapkan mendukung transformasi pendidikan tinggi."
+      data-meta="Sumedang, 8 Juli 2025<br/>Posted By : Media UNWIM" />
+  </div>
+
+  <!-- Tombol Selengkapnya -->
+  <div class="button-wrapper text-center mt-6">
+    <a href="#" class="inline-block px-6 py-2 bg-gray-700 text-white rounded-full text-sm hover:bg-gray-800 transition duration-300">Selengkapnya</a>
+  </div>
+</section>
+
+        <!-- Section: Media Sosial Univ -->
          <section class="sosmed-section">
             <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-900">MEDIA SOSIAL UNIVERSITAS</h2>
 
@@ -935,6 +962,29 @@
     animation: scroll 20s linear infinite;
   }
 </style>
+
+<!-- JavaScript berita univ-->
+<script>
+  const thumbs = document.querySelectorAll('.thumb');
+  const mainImage = document.getElementById('mainImage');
+  const mainTitle = document.getElementById('mainTitle');
+  const mainText = document.getElementById('mainText');
+  const mainMeta = document.getElementById('mainMeta');
+
+  thumbs.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      // Ganti border active
+      thumbs.forEach(t => t.classList.remove('border-blue-500'));
+      thumb.classList.add('border-blue-500');
+
+      // Ubah konten utama
+      mainImage.src = thumb.src;
+      mainTitle.innerText = thumb.getAttribute('data-title');
+      mainText.innerText = thumb.getAttribute('data-text');
+      mainMeta.innerHTML = thumb.getAttribute('data-meta');
+    });
+  });
+</script>
 
         </body>
     </html>
