@@ -247,31 +247,37 @@
 </section>
 
 
-        <!-- Section: Ajakan Daftar -->
-        <section class="bg-white py-[130px] position-relative" style="background-image: url('./assets/bg pendaftarn.png')">
-            <img
-                src="./assets/model pendaftaran.png" 
-                alt="Kenali Lebih Dekat"
-                class="position-absolute left-0 bottom-0 h-80">
-            <div
-                class="mx-auto px-4 flex flex-col md:flex-col items-center">
-                <div class="text-center md:text-center">
-                    <h2
-                        class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Kenali
-                        Lebih
-                        Dekat, Pilih yang Terbaik!</h2>
-                    <p class="text-gray-700 mb-6">Klik Daftar untuk mulai
-                        perjalananmu. Klik
-                        Informasi untuk tahu lebih banyak.</p>
-                    <div class="space-x-4">
-                        <a href="#"
-                            class="bg-gray-900 text-white px-6 py-2 rounded-full hover:bg-gray-700">Daftar</a>
-                        <a href="#"
-                            class="border border-gray-900 text-gray-900 px-6 py-2 rounded-full hover:bg-gray-900 hover:text-white">Informasi</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Section: Ajakan Daftar -->
+<section class="relative bg-white py-24 md:py-[130px] bg-cover bg-center overflow-hidden" style="background-image: url('./assets/bg pendaftarn.png')">
+    <!-- Gambar Model - Diperbesar & Diposisikan -->
+    <img
+        src="./assets/model pendaftaran.png"
+        alt="Kenali Lebih Dekat"
+        class="absolute left-0 bottom-[-20px] h-52 md:h-80 object-contain pointer-events-none select-none">
+
+    <!-- Konten Utama -->
+    <div class="relative z-10 max-w-2xl mx-auto px-4 flex flex-col items-center text-center">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2 leading-tight">
+            Kenali Lebih Dekat, Pilih yang Terbaik!
+        </h2>
+        <p class="text-gray-700 mb-6 text-sm sm:text-base">
+            Klik Daftar untuk mulai perjalananmu. Klik Informasi untuk tahu lebih banyak.
+        </p>
+
+        <!-- Tombol Minimal (Mobile) -->
+        <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center">
+            <a href="#"
+                class="inline-block bg-gray-900 text-white px-4 py-1.5 sm:px-6 sm:py-2 rounded-full hover:bg-gray-700 text-sm sm:text-base text-center">
+                Daftar
+            </a>
+            <a href="#"
+                class="inline-block border border-gray-900 text-gray-900 px-4 py-1.5 sm:px-6 sm:py-2 rounded-full hover:bg-gray-900 hover:text-white text-sm sm:text-base text-center">
+                Informasi
+            </a>
+        </div>
+    </div>
+</section>
+
 
         <!-- SECTION TESTIMONI ALUMNI -->
 <section class="py-20 bg-gradient-to-b from-[#6B6A6A] to-[#4E4E4E] text-gray-200 text-xs px-4">
