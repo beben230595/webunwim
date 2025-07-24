@@ -958,8 +958,30 @@
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
+
+  .slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    /* Mask untuk transisi di pinggir */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #aaa 10%, #aaa 90%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, #aaa 10%, #aaa 90%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
   .animate-scroll {
+    display: flex;
     animation: scroll 20s linear infinite;
+  }
+
+  .slide {
+    min-width: 200px; /* ukuran contoh */
+    height: 150px;
+    background-color: lightgray;
+    margin-right: 20px;
   }
 </style>
 

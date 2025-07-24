@@ -1,0 +1,114 @@
+body {
+  background-color: #f1f5f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Topbar */
+.topbar {
+  background: linear-gradient(to right, #f3f3f3, #cccccc);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-bottom: 4px solid #007bff00;
+}
+
+.topbar img {
+  border-radius: 8px;
+}
+
+.topbar .btn {
+  border-color: #4d4d4d;
+  color: #4d4d4d;
+  transition: 0.3s;
+}
+.topbar .btn:hover {
+  background-color: #4d4d4d;
+  color: #ffffff;
+}
+
+/* Modul Cards */
+.module-card {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease-in-out;
+  padding: 25px 15px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.module-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.module-card.active {
+  border: 2px solid #4d4d4d;
+  background-color: #e9f3ff;
+}
+
+/* Icon di atas modul */
+.module-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Role Section */
+.sidebar-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.role-box {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-left: 5px solid #4d4d4d;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive Enhancement */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .topbar .btn {
+    margin-top: 10px;
+  }
+}
+
+/* Animasi */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.garis-fakultas {
+  height: 5px;
+}
+
+.bg-fakultas-1 { background-color: #22c55e; }  /* Hijau */
+.bg-fakultas-2 { background-color: #06b6d4; }  /* Cyan */
+.bg-fakultas-3 { background-color: #3b82f6; }  /* Biru */
+.bg-fakultas-4 { background-color: #fde047; }  /* Kuning */
+
+/* Font untuk teks 'PORTAL' */
+.portal-title {
+  font-weight: bold;
+  font-size: 30px; /* ukuran tulisan */
+  color: #353535;
+  letter-spacing: 7px; /* jarak antar huruf */
+}
+
+/* Font untuk 'UNIVERSITAS WINAYA MUKTI' */
+.unwim-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px; /* ubah sesuai kebutuhan */
+  color: #353535; /* opsional agar kontras di topbar gelap */
+  letter-spacing: 3px; /* jarak antar huruf */
+}

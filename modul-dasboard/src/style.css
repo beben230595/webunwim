@@ -1,0 +1,89 @@
+body {
+  background-color: #f1f5f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Topbar */
+.topbar {
+  background: linear-gradient(to right, #002f4b, #005e92);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-bottom: 4px solid #007bff;
+}
+
+.topbar img {
+  border-radius: 8px;
+}
+
+.topbar .btn {
+  border-color: #ffffff;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.topbar .btn:hover {
+  background-color: #ffffff;
+  color: #003366;
+}
+
+/* Modul Cards */
+.module-card {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease-in-out;
+  padding: 25px 15px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.module-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.module-card.active {
+  border: 2px solid #0d6efd;
+  background-color: #e9f3ff;
+}
+
+/* Icon di atas modul */
+.module-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Role Section */
+.sidebar-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.role-box {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive Enhancement */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .topbar .btn {
+    margin-top: 10px;
+  }
+}
+
+/* Animasi */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

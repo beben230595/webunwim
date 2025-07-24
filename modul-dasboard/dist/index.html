@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>modul dasboard</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard UNWIM</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar d-flex justify-content-between align-items-center px-4">
+    <div class="d-flex align-items-center">
+      <img src="./assets/logo (4).png" height="50" class="mr-3" alt="Logo UNWIM" />
+      <div>
+        <div class="portal-title">PORTAL</div>
+        <div class="unwim-subtitle">UNIVERSITAS WINAYA MUKTI</div>
+      </div>
+    </div>
+    <div>
+      <a href="#" class="btn btn-sm btn-outline-light mr-2">Halaman Profil</a>
+      <a href="#" class="btn btn-sm btn-outline-light">Keluar</a>
+    </div>
+  </div>
+
+  <!-- Garis Warna Identitas Fakultas (Tanpa Tailwind) -->
+<div class="row no-gutters garis-fakultas">
+  <div class="col-3 bg-fakultas-1"></div>
+  <div class="col-3 bg-fakultas-2"></div>
+  <div class="col-3 bg-fakultas-3"></div>
+  <div class="col-3 bg-fakultas-4"></div>
+</div>
+
+  <!-- Main Content -->
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <!-- Modul -->
+      <div class="col-md-8">
+        <h5 class="mb-3">Daftar Modul</h5>
+        <div class="row" id="module-list">
+          <!-- Diisi dari script.js -->
+        </div>
+      </div>
+
+      <!-- Role -->
+      <div class="col-md-4">
+        <h5 class="mb-3">Daftar Role</h5>
+        <div class="sidebar-title text-muted">Klik salah satu modul untuk melihat role</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
